@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="starlark">
+    <meta>
+        <name>Starlark</name>
+        <type>compiled</type>
+        <preferred-file-extension>star</preferred-file-extension>
+    </meta>
+
+    <detectors>
+        <extension>star</extension>
+    </detectors>
+
+    <tree-sitter>
+        <folds path="folds.scm" />
+        <highlights path="highlights.scm" />
+        <indents path="indents.scm" />
+        <injections path="injfections.scm" />
+        <locals path="locals.scm" />
+    </tree-sitter>
+</syntax>

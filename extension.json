@@ -1,0 +1,30 @@
+{
+    "identifier": "com.brendanthompson.nova-starlark",
+    "name": "Starlark",
+    "organization": "Brendan Thompson",
+    "description": "Starlark language support",
+    "repository": "https://github.com/BrendanThompson/nova-starlark",
+    "bugs": "https://github.com/BrendanThompson/nova-starlark/issues",
+    "homepage": "https://brendanthompson.com",
+    "version": "1.0.0",
+    "categories": ["languages"],
+    "activationEvents": ["onLanguage:Starlark", "onWorkspaceContains:*.star"],
+    "main": "main.js",
+    "entitlements": {
+        "process": true,
+        "filesystem": "readonly"
+    },
+    "config": [{
+            "key": "nova-starlark.language-server-path",
+            "title": "Language Server Path",
+            "type": "path",
+            "placeholder": "~/go/bin/starlark-lsp"
+        },
+        {
+            "key": "nova-starlark.enable-language-server",
+            "title": "Enable Language Server",
+            "type": "boolean",
+            "default": false
+        }
+    ]
+}
